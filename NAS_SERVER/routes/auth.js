@@ -27,7 +27,7 @@ router.post("/connect", async (req, res) => {
             return res.status(400).json({ error: "Invalid share name format" });
         }
 
-        // --- NEW CONNECTION LOGIC ---
+        
         // Using Windows net use for reliable SMB authentication
         console.log(`Attempting SMB connection to \\\\${host}\\${share} with username: ${username}${domain ? ` and domain: ${domain}` : ' (no domain)'}`);
         const userPart = domain ? `${domain}\\${username}` : username;
