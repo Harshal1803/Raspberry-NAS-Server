@@ -50,7 +50,7 @@ function verifyToken(req, res, next) {
 router.get("/list", verifyToken, async (req, res) => {
   try {
     const { connId } = req.user;
-    const relPath = req.query.path || ""; // optional subfolder path
+    const relPath = req.query.path || ""; // optional subfolder paths
 
     // Find connection from DB
     const conn = await Connection.findById(connId);
