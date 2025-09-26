@@ -1,13 +1,97 @@
 import express from "express";
 import jwt from "jsonwebtoken";
+import bcrypt from "bcryptjs";
 import { exec } from "child_process";
 import { promisify } from "util";
 const execAsync = promisify(exec);
 
 import Connection from "../models/Connection.js";
+import User from "../models/User.js";
+import Permission from "../models/Permission.js";
 import { encryptText } from "../utils/crypto.js";
 
 const router = express.Router();
+
+// Middleware to verify JWT
+const authenticate = (req, res, next) => {
+  const token = req.headers.authorization?.split(' ')[1];
+  if (!token) return res.status(401).json({ error: "No token provided" });
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.userId = decoded.userId;
+    next();
+  } catch (err) {
+    res.status(401).json({ error: "Invalid token" });
+  }
+};
+
+/*
+POST /auth/register
+body: { username, password }
+*/
+router.post("/register", async (req, res) => {
+    try {
+        console.log("Register request:", req.body);
+        const { username, password } = req.body;
+        if (!username || !password) {
+            return res.status(400).json({ error: "username and password required" });
+        }
+        const existing = await User.findOne({ username });
+        if (existing) {
+            return res.status(400).json({ error: "Username already exists" });
+        }
+        const hashed = await bcrypt.hash(password, 10);
+        // Create default permissions if not exist
+        let adminPerm = await Permission.findOne({ name: "admin" });
+        if (!adminPerm) {
+            adminPerm = await Permission.create({ name: "admin", description: "Full access" });
+        }
+        const user = await User.create({ username, password: hashed, permissions: [adminPerm._id] });
+        console.log("User created:", user._id);
+        res.json({ message: "User created", user: { id: user._id, username } });
+    } catch (err) {
+        console.error("Error in /auth/register:", err);
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
+
+/*
+GET /auth/users
+Headers: Authorization: Bearer <token>
+*/
+router.get("/users", authenticate, async (req, res) => {
+    try {
+        const users = await User.find().populate('permissions').select('-password');
+        res.json({ users });
+    } catch (err) {
+        console.error("Error in /auth/users:", err);
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
+
+/*
+POST /auth/login
+body: { username, password }
+*/
+router.post("/login", async (req, res) => {
+    try {
+        const { username, password } = req.body;
+        if (!username || !password) {
+            return res.status(400).json({ error: "username and password required" });
+        }
+        const user = await User.findOne({ username }).populate('permissions');
+        if (!user || !await bcrypt.compare(password, user.password)) {
+            return res.status(401).json({ error: "Invalid credentials" });
+        }
+        user.lastLoginIP = req.ip;
+        await user.save();
+        const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: "7d" });
+        res.json({ token, user: { id: user._id, username, permissions: user.permissions } });
+    } catch (err) {
+        console.error("Error in /auth/login:", err);
+        res.status(500).json({ error: "Internal server error" });
+    }
+});
 
 /*
 POST /auth/connect

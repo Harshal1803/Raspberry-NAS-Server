@@ -1070,7 +1070,7 @@ export default function App() {
             </main>
             <Dock page={currentPage} setPage={setCurrentPage} />
             <div className="fixed bottom-4 right-6 text-xs text-main/50 font-mono z-50 pointer-events-none">
-                -Developed by chunnu & channu
+                -Developed by Harshal & Kovid
             </div>
         </div>
     );
