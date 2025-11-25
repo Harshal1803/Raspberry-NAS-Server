@@ -1,0 +1,34 @@
+Harshal Verma
+harshalverma.1801@gmail.com
+ +91-7014594443
+
+
+29/09/2025
+
+Hiring Manager
+American Express
+
+Dear Hiring Manager,
+
+I am excited to apply for the Site Reliability Engineering role at American Express. With hands-on experience in cloud infrastructure, observability, automation, and container orchestration, I am eager to contribute to Amex’s 175-year tradition of innovation by building resilient, scalable, and high-performing systems that directly support your customers and business objectives.
+
+In my recent internships at Mathionix Technologies and HitoriTech, I gained practical experience in designing and implementing reliable systems:
+
+Deployed and managed scalable AWS EC2 infrastructure with load balancing and auto-scaling for high-traffic applications.
+
+Built and optimized CI/CD pipelines with Jenkins and GitHub Actions, achieving zero-downtime deployments and reducing release times by 40%.
+
+Monitored and optimized infrastructure with Prometheus, Grafana, and AWS CloudWatch, ensuring performance visibility and proactive incident response.
+
+Managed Docker- and Kubernetes-based environments, enabling seamless scaling and high availability of containerized applications.
+
+Technically, I bring proficiency in Python, Bash, and Linux system administration, with strong foundations in cloud platforms (AWS, Azure, GCP), and a deep interest in observability and SRE practices. I have also designed automation workflows with Terraform and Ansible, complementing infrastructure-as-code initiatives.
+
+What excites me most about American Express is your commitment to resilience and innovation—from chaos engineering practices to disaster recovery strategies. I am motivated by the challenge of contributing to systems where reliability, scalability, and performance directly impact millions of customers worldwide.
+
+I would welcome the opportunity to discuss how my skills and experiences align with American Express’s mission to define the future of secure and reliable financial services.
+
+Thank you for considering my application. I look forward to the possibility of contributing to Team Amex.
+
+Sincerely,
+Harshal Verma

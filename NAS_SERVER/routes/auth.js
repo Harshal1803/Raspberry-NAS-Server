@@ -5,6 +5,13 @@ import { exec } from "child_process";
 import { promisify } from "util";
 const execAsync = promisify(exec);
 
+const execWithTimeout = (command, timeoutMs = 5000) => {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error('Command timeout')), timeoutMs);
+    execAsync(command).then(resolve).catch(reject).finally(() => clearTimeout(timer));
+  });
+};
+
 import Connection from "../models/Connection.js";
 import User from "../models/User.js";
 import Permission from "../models/Permission.js";
@@ -94,9 +101,9 @@ router.post("/login", async (req, res) => {
 });
 
 /*
-POST /auth/connect
-body: { host, share, username, password }
-*/
+  POST /auth/connect
+  body: { host, share, username, password }
+  */
 router.post("/connect", async (req, res) => {
     try {
         const { host, share, username, password, domain = "WORKGROUP" } = req.body;
@@ -118,26 +125,25 @@ router.post("/connect", async (req, res) => {
 
         // Disconnect any existing connection to avoid conflict
         try {
-            await execAsync(`net use /delete \\\\${host}\\${share}`);
+            await execWithTimeout(`net use /delete \\\\${host}\\${share}`, 2000);
         } catch (e) {
             // Ignore if no connection exists
         }
 
         const netCommand = `net use \\\\${host}\\${share} "${password}" /user:${userPart}`;
 
-        await execAsync(netCommand);
+        await execWithTimeout(netCommand, 10000);
         console.log("SMB connection successful");
 
-        // List files using dir command
-        const dirCommand = `dir \\\\${host}\\${share}`;
-        const { stdout } = await execAsync(dirCommand);
-        // Parse dir output to get file names (skip header lines)
-        const lines = stdout.split('\n').slice(5); // Skip the first 5 lines of dir output
-        const files = lines.map(line => line.trim()).filter(line => line && !line.startsWith('Directory of'));
-        console.log("Files in share:", files);
+        // Test connection by attempting to list (without parsing)
+        try {
+          await execWithTimeout(`dir \\\\${host}\\${share} /b`, 5000);
+        } catch (listErr) {
+          // Ignore list error, connection is established if net use succeeded
+        }
 
         // Disconnect
-        await execAsync(`net use \\\\${host}\\${share} /delete`);
+        await execWithTimeout(`net use \\\\${host}\\${share} /delete`, 2000);
 
         const encPass = encryptText(password);
         console.log("Encrypted password, now creating connection record...");
@@ -150,7 +156,7 @@ router.post("/connect", async (req, res) => {
         });
         console.log("Connection record created with ID:", conn._id);
 
-        const token = jwt.sign({ connId: conn._id }, process.env.JWT_SECRET, { expiresIn: "7d" });
+        const token = jwt.sign({ userId: username, connId: conn._id }, process.env.JWT_SECRET, { expiresIn: "7d" });
         console.log("JWT signed successfully for connection ID:", conn._id);
 
         res.json({ ok: true, token, connection: { id: conn._id, host, share, username } });
@@ -172,6 +178,19 @@ router.post("/connect", async (req, res) => {
             errorMessage = err.message;
         }
         res.status(500).json({ error: errorMessage });
+    }
+});
+
+/*
+POST /auth/verify
+Headers: Authorization: Bearer <token>
+*/
+router.post("/verify", authenticate, async (req, res) => {
+    try {
+        // If authenticate middleware passes, token is valid
+        res.json({ ok: true });
+    } catch (err) {
+        res.status(401).json({ error: "Invalid token" });
     }
 });
 

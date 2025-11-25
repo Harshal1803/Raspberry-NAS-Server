@@ -1,0 +1,593 @@
+Microsoft Windows [Version 10.0.22631.6199]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Dell>ssh root@192.168.1.44
+root@192.168.1.44's password:
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+ ─────────────────────────────────────────────────────
+ DietPi v9.18.1 : Update available
+ ─────────────────────────────────────────────────────
+ - Device model : RPi 4 Model B (aarch64)
+ - CPU temp : 39 °C / 102 °F : Cool runnings
+ - LAN IP : 192.168.1.44 (eth0)
+ - MOTD : Debian 13 Trixie has been released. Learn how to upgrade:
+          https://dietpi.com/blog/?p=4014
+ ─────────────────────────────────────────────────────
+
+ DietPi Team     : https://github.com/MichaIng/DietPi#the-dietpi-project-team
+ Patreon Legends : Chris Gelatt, ADSB.im
+ Website         : https://dietpi.com/ | https://x.com/DietPi_ | Bsky: @dietpi.com
+ Contribute      : https://dietpi.com/contribute.html
+ Web Hosting by  : https://login-online.com/
+
+ dietpi-update   : Run now to update DietPi from v9.18.1 to v9.19.2
+
+ dietpi-launcher : All the DietPi programs in one place
+ dietpi-config   : Feature rich configuration tool for your device
+ dietpi-software : Select optimised software for installation
+ htop            : Resource monitor
+ cpu             : Shows CPU information and stats
+
+root@DietPi:~# htop
+root@DietPi:~# lawrd
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages will be upgraded:
+  ngrok
+1 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 5835 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 https://ngrok-agent.s3.amazonaws.com buster/main arm64 ngrok arm64 3.33.0 [5835 kB]
+Fetched 5835 kB in 5s (1146 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 22565 files and directories currently installed.)
+Preparing to unpack .../ngrok_3.33.0_arm64.deb ...
+Unpacking ngrok (3.33.0) over (3.30.0) ...
+Setting up ngrok (3.33.0) ...
+Hit:1 https://deb.debian.org/debian bookworm InRelease
+Get:2 https://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 https://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 https://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]
+Get:5 https://dietpi.com/apt bookworm InRelease [1934 B]
+Get:6 https://deb.debian.org/debian-security bookworm-security/main arm64 Packages [283 kB]
+Hit:7 https://ngrok-agent.s3.amazonaws.com buster InRelease
+Get:8 https://dietpi.com/apt all InRelease [30.3 kB]
+Get:9 https://deb.debian.org/debian bookworm-backports/main arm64 Packages.diff/Index [63.3 kB]
+Get:10 https://archive.raspberrypi.com/debian bookworm InRelease [54.9 kB]
+Get:11 https://deb.debian.org/debian bookworm-backports/main arm64 Packages T-2025-11-19-0804.03-F-2025-11-18-0832.01.pdiff [5279 B]
+Get:11 https://deb.debian.org/debian bookworm-backports/main arm64 Packages T-2025-11-19-0804.03-F-2025-11-18-0832.01.pdiff [5279 B]
+Get:12 https://archive.raspberrypi.com/debian bookworm/main arm64 Packages [559 kB]
+Fetched 1161 kB in 5s (230 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+root@DietPi:~# cd /mnt/s
+samba/ ssd/
+root@DietPi:~# cd /mnt/ssd/
+root@DietPi:/mnt/ssd#
+root@DietPi:/mnt/ssd# ls
+ 75b978a23898bf4b303b9b400259c4f0.png                                                      'download (3).jpeg'
+'Open Peeps - Standing.png'                                                                'download (4).jpeg'
+'Untitled document.docx'                                                                   'download (5).jpeg'
+ Winner_of_Best_Single_Family_Home_in_Canada_2016_2F2017__7C_Marble_Construction_-_36.mp4   kovid
+'Your Name.mp4'                                                                             logo3.png
+ aalu                                                                                       lost+found
+ abc                                                                                        offline-resume-harshal.pdf
+ amex-cv.txt                                                                                pexels-pixabay-104827.jpg
+'download (1).jpeg'                                                                         pics
+'download (2).jpeg'                                                                         reume-harshal.pdf
+root@DietPi:/mnt/ssd# bye
+Failed to connect to bus: No such file or directory
+Connection to 192.168.1.44 closed by remote host.
+Connection to 192.168.1.44 closed.
+
+C:\Users\Dell>ssh root@192.168.1.44
+root@192.168.1.44's password:
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+ ─────────────────────────────────────────────────────
+ DietPi v9.18.1 : Update available
+ ─────────────────────────────────────────────────────
+ - Device model : RPi 4 Model B (aarch64)
+ - CPU temp : 42 °C / 107 °F : Optimal temperature
+ - LAN IP : 192.168.1.44 (eth0)
+ - MOTD : Debian 13 Trixie has been released. Learn how to upgrade:
+          https://dietpi.com/blog/?p=4014
+ ─────────────────────────────────────────────────────
+
+ DietPi Team     : https://github.com/MichaIng/DietPi#the-dietpi-project-team
+ Patreon Legends : Chris Gelatt, ADSB.im
+ Website         : https://dietpi.com/ | https://x.com/DietPi_ | Bsky: @dietpi.com
+ Contribute      : https://dietpi.com/contribute.html
+ Web Hosting by  : https://login-online.com/
+
+ dietpi-update   : Run now to update DietPi from v9.18.1 to v9.19.2
+
+ dietpi-launcher : All the DietPi programs in one place
+ dietpi-config   : Feature rich configuration tool for your device
+ dietpi-software : Select optimised software for installation
+ htop            : Resource monitor
+ cpu             : Shows CPU information and stats
+
+root@DietPi:~# dietpi-config
+[ SUB1 ] DietPi-Set_hardware > wifimodules (onboard_enable)
+[  OK  ] wifimodules (onboard_enable) | Completed
+[ SUB1 ] DietPi-Set_hardware > wifimodules (onboard_disable)
+[  OK  ] DietPi-Set_hardware | Added setting dtoverlay=disable-wifi to end of file /boot/config.txt
+[  OK  ] wifimodules (onboard_disable) | Completed
+[ SUB1 ] DietPi-Set_hardware > wifimodules (onboard_enable)
+[  OK  ] wifimodules (onboard_enable) | Completed
+Connection to 192.168.1.44 closed by remote host.
+Connection to 192.168.1.44 closed.
+
+C:\Users\Dell>ssh root@192.168.1.44
+
+C:\Users\Dell>ssh root@192.168.1.44
+root@192.168.1.44's password:
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+ ─────────────────────────────────────────────────────
+ DietPi v9.18.1 : 16:38 - Thu 11/20/25
+ ─────────────────────────────────────────────────────
+ - Device model : RPi 4 Model B (aarch64)
+ - CPU temp : 47 °C / 116 °F : Optimal temperature
+ - LAN IP : 192.168.1.44 (eth0)
+ - MOTD : Debian 13 Trixie has been released. Learn how to upgrade:
+          https://dietpi.com/blog/?p=4014
+ ─────────────────────────────────────────────────────
+
+ DietPi Team     : https://github.com/MichaIng/DietPi#the-dietpi-project-team
+ Patreon Legends : Chris Gelatt, ADSB.im
+ Website         : https://dietpi.com/ | https://x.com/DietPi_ | Bsky: @dietpi.com
+ Contribute      : https://dietpi.com/contribute.html
+ Web Hosting by  : https://login-online.com/
+
+ dietpi-launcher : All the DietPi programs in one place
+ dietpi-config   : Feature rich configuration tool for your device
+ dietpi-software : Select optimised software for installation
+ htop            : Resource monitor
+ cpu             : Shows CPU information and stats
+
+root@DietPi:~# dietpi-config
+[  OK  ] DietPi-Config | Checking URL: https://dietpi.com/
+root@DietPi:~# sudo rfkill list
+sudo: rfkill: command not found
+root@DietPi:~# sudo apt update
+Hit:1 https://deb.debian.org/debian bookworm InRelease
+Get:2 https://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Get:3 https://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Get:4 https://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]
+Hit:5 https://dietpi.com/apt bookworm InRelease
+Hit:6 https://ngrok-agent.s3.amazonaws.com buster InRelease
+Hit:7 https://archive.raspberrypi.com/debian bookworm InRelease
+Hit:8 https://dietpi.com/apt all InRelease
+Fetched 163 kB in 3s (60.9 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+root@DietPi:~# sudo apt install rfkill
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  rfkill
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 37.3 kB of archives.
+After this operation, 116 kB of additional disk space will be used.
+Get:1 https://deb.debian.org/debian bookworm/main arm64 rfkill arm64 2.38.1-5+deb12u3 [37.3 kB]
+Fetched 37.3 kB in 0s (322 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package rfkill.
+(Reading database ... 22565 files and directories currently installed.)
+Preparing to unpack .../rfkill_2.38.1-5+deb12u3_arm64.deb ...
+Unpacking rfkill (2.38.1-5+deb12u3) ...
+Setting up rfkill (2.38.1-5+deb12u3) ...
+root@DietPi:~# sudo rfkill list
+0: hci0: Bluetooth
+        Soft blocked: no
+        Hard blocked: no
+root@DietPi:~# lsmod | grep brcmfmac
+root@DietPi:~# sudo modprobe brcmfmac
+root@DietPi:~# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:27:e1:8e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.44/24 brd 192.168.1.255 scope global dynamic eth0
+       valid_lft 86073sec preferred_lft 86073sec
+    inet6 2406:b400:75:df3f:dea6:32ff:fe27:e18e/64 scope global dynamic mngtmpaddr
+       valid_lft 14272sec preferred_lft 14272sec
+    inet6 fe80::dea6:32ff:fe27:e18e/64 scope link
+       valid_lft forever preferred_lft forever
+3: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000
+    link/ether dc:a6:32:27:e1:90 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.0.50/24 brd 10.0.0.255 scope global wlan0
+       valid_lft forever preferred_lft forever
+root@DietPi:~# sudo ip link set wlan0 up
+root@DietPi:~# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:27:e1:8e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.44/24 brd 192.168.1.255 scope global dynamic eth0
+       valid_lft 85868sec preferred_lft 85868sec
+    inet6 2406:b400:75:df3f:dea6:32ff:fe27:e18e/64 scope global dynamic mngtmpaddr
+       valid_lft 14067sec preferred_lft 14067sec
+    inet6 fe80::dea6:32ff:fe27:e18e/64 scope link
+       valid_lft forever preferred_lft forever
+3: wlan0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000
+    link/ether dc:a6:32:27:e1:90 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.0.50/24 brd 10.0.0.255 scope global wlan0
+       valid_lft forever preferred_lft forever
+root@DietPi:~# sudo wpa_cli -i wlan0 reconfigure
+Failed to connect to non-global ctrl_ifname: wlan0  error: No such file or directory
+root@DietPi:~# sudo wpa_cli -i wlan0 reconfigure
+Failed to connect to non-global ctrl_ifname: wlan0  error: No such file or directory
+root@DietPi:~# iwconfig wlan0
+wlan0     IEEE 802.11  ESSID:off/any
+          Mode:Managed  Access Point: Not-Associated   Tx-Power=31 dBm
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Encryption key:off
+          Power Management:on
+
+root@DietPi:~# sudo wpa_cli -i wlan0 status
+Failed to connect to non-global ctrl_ifname: wlan0  error: No such file or directory
+root@DietPi:~# sudo wpa_cli -i wlan0 status
+Failed to connect to non-global ctrl_ifname: wlan0  error: No such file or directory
+root@DietPi:~# ps aux | grep wpa
+root        1832  0.0  0.0   3568  1928 pts/0    S+   16:52   0:00 grep wpa
+root@DietPi:~# sudo systemctl status wpa_supplicant
+○ wpa_supplicant.service - WPA supplicant
+     Loaded: loaded (/lib/systemd/system/wpa_supplicant.service; disabled; preset: enabled)
+     Active: inactive (dead)
+root@DietPi:~# sudo systemctl enable wpa_supplicant
+Created symlink /etc/systemd/system/dbus-fi.w1.wpa_supplicant1.service → /lib/systemd/system/wpa_supplicant.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/wpa_supplicant.service → /lib/systemd/system/wpa_supplicant.service.
+root@DietPi:~# sudo systemctl start wpa_supplicant
+Failed to start wpa_supplicant.service: Unit dbus.socket not found.
+root@DietPi:~# sudo apt update
+Hit:1 https://deb.debian.org/debian bookworm InRelease
+Hit:2 https://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+Hit:4 https://deb.debian.org/debian bookworm-backports InRelease
+Hit:5 https://dietpi.com/apt bookworm InRelease
+Hit:6 https://archive.raspberrypi.com/debian bookworm InRelease
+Hit:7 https://ngrok-agent.s3.amazonaws.com buster InRelease
+Hit:8 https://dietpi.com/apt all InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+All packages are up to date.
+root@DietPi:~# sudo apt install dbus
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common
+Suggested packages:
+  default-dbus-session-bus | dbus-session-bus
+The following NEW packages will be installed:
+  dbus dbus-bin dbus-daemon dbus-session-bus-common dbus-system-bus-common
+0 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 533 kB of archives.
+After this operation, 1347 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 https://deb.debian.org/debian bookworm/main arm64 dbus-bin arm64 1.14.10-1~deb12u1 [104 kB]
+Get:2 https://deb.debian.org/debian bookworm/main arm64 dbus-session-bus-common all 1.14.10-1~deb12u1 [78.2 kB]
+Get:3 https://deb.debian.org/debian bookworm/main arm64 dbus-daemon arm64 1.14.10-1~deb12u1 [176 kB]
+Get:4 https://deb.debian.org/debian bookworm/main arm64 dbus-system-bus-common all 1.14.10-1~deb12u1 [79.3 kB]
+Get:5 https://deb.debian.org/debian bookworm/main arm64 dbus arm64 1.14.10-1~deb12u1 [96.2 kB]
+Fetched 533 kB in 0s (3234 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package dbus-bin.
+(Reading database ... 22572 files and directories currently installed.)
+Preparing to unpack .../dbus-bin_1.14.10-1~deb12u1_arm64.deb ...
+Unpacking dbus-bin (1.14.10-1~deb12u1) ...
+Selecting previously unselected package dbus-session-bus-common.
+Preparing to unpack .../dbus-session-bus-common_1.14.10-1~deb12u1_all.deb ...
+Unpacking dbus-session-bus-common (1.14.10-1~deb12u1) ...
+Selecting previously unselected package dbus-daemon.
+Preparing to unpack .../dbus-daemon_1.14.10-1~deb12u1_arm64.deb ...
+Unpacking dbus-daemon (1.14.10-1~deb12u1) ...
+Selecting previously unselected package dbus-system-bus-common.
+Preparing to unpack .../dbus-system-bus-common_1.14.10-1~deb12u1_all.deb ...
+Unpacking dbus-system-bus-common (1.14.10-1~deb12u1) ...
+Selecting previously unselected package dbus.
+Preparing to unpack .../dbus_1.14.10-1~deb12u1_arm64.deb ...
+Unpacking dbus (1.14.10-1~deb12u1) ...
+Setting up dbus-session-bus-common (1.14.10-1~deb12u1) ...
+Setting up dbus-system-bus-common (1.14.10-1~deb12u1) ...
+Setting up dbus-bin (1.14.10-1~deb12u1) ...
+Setting up dbus-daemon (1.14.10-1~deb12u1) ...
+Setting up dbus (1.14.10-1~deb12u1) ...
+dbus.service is a disabled or a static unit, not starting it.
+root@DietPi:~# sudo systemctl enable dbus
+Synchronizing state of dbus.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable dbus
+The unit files have no installation config (WantedBy=, RequiredBy=, Also=,
+Alias= settings in the [Install] section, and DefaultInstance= for template
+units). This means they are not meant to be enabled using systemctl.
+
+Possible reasons for having this kind of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/ or .requires/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+root@DietPi:~# sudo systemctl start dbus
+root@DietPi:~# systemctl status dbus
+● dbus.service - D-Bus System Message Bus
+     Loaded: loaded (/lib/systemd/system/dbus.service; static)
+     Active: active (running) since Thu 2025-11-20 16:55:50 UTC; 4s ago
+TriggeredBy: ● dbus.socket
+       Docs: man:dbus-daemon(1)
+   Main PID: 2797 (dbus-daemon)
+      Tasks: 1 (limit: 4532)
+        CPU: 19ms
+     CGroup: /system.slice/dbus.service
+             └─2797 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+
+Nov 20 16:55:50 DietPi systemd[1]: Starting dbus.service - D-Bus System Message Bus...
+Nov 20 16:55:50 DietPi systemd[1]: Started dbus.service - D-Bus System Message Bus.
+root@DietPi:~# sudo apt install wpasupplicant
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+wpasupplicant is already the newest version (2:2.10-12+deb12u3).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+root@DietPi:~# sudo systemctl enable wpa_supplicant
+root@DietPi:~# sudo systemctl start wpa_supplicant
+root@DietPi:~# systemctl status wpa_supplicant
+● wpa_supplicant.service - WPA supplicant
+     Loaded: loaded (/lib/systemd/system/wpa_supplicant.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2025-11-20 16:56:43 UTC; 4s ago
+   Main PID: 2827 (wpa_supplicant)
+      Tasks: 1 (limit: 4532)
+        CPU: 15ms
+     CGroup: /system.slice/wpa_supplicant.service
+             └─2827 /sbin/wpa_supplicant -u -s -O "DIR=/run/wpa_supplicant GROUP=netdev"
+
+Nov 20 16:56:43 DietPi systemd[1]: Starting wpa_supplicant.service - WPA supplicant...
+Nov 20 16:56:43 DietPi wpa_supplicant[2827]: Successfully initialized wpa_supplicant
+Nov 20 16:56:43 DietPi systemd[1]: Started wpa_supplicant.service - WPA supplicant.
+root@DietPi:~# sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+root@DietPi:~# sudo systemctl restart wpa_supplicant
+root@DietPi:~# sudo wpa_cli -i wlan0 status
+Failed to connect to non-global ctrl_ifname: wlan0  error: No such file or directory
+root@DietPi:~# systemctl status dbus
+● dbus.service - D-Bus System Message Bus
+     Loaded: loaded (/lib/systemd/system/dbus.service; static)
+     Active: active (running) since Thu 2025-11-20 16:55:50 UTC; 3min 12s ago
+TriggeredBy: ● dbus.socket
+       Docs: man:dbus-daemon(1)
+   Main PID: 2797 (dbus-daemon)
+      Tasks: 1 (limit: 4532)
+        CPU: 25ms
+     CGroup: /system.slice/dbus.service
+             └─2797 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+
+Nov 20 16:55:50 DietPi systemd[1]: Starting dbus.service - D-Bus System Message Bus...
+Nov 20 16:55:50 DietPi systemd[1]: Started dbus.service - D-Bus System Message Bus.
+root@DietPi:~# sudo apt install --reinstall wpasupplicant wireless-tools firmware-brcm80211
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+0 upgraded, 0 newly installed, 3 reinstalled, 0 to remove and 0 not upgraded.
+Need to get 7336 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 https://deb.debian.org/debian bookworm/main arm64 wireless-tools arm64 30~pre9-14 [107 kB]
+Get:2 https://deb.debian.org/debian bookworm/main arm64 wpasupplicant arm64 2:2.10-12+deb12u3 [1306 kB]
+Get:3 https://archive.raspberrypi.com/debian bookworm/main arm64 firmware-brcm80211 all 1:20240709-2~bpo12+1+rpt4 [5924 kB]
+Fetched 7336 kB in 4s (1846 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 22636 files and directories currently installed.)
+Preparing to unpack .../firmware-brcm80211_1%3a20240709-2~bpo12+1+rpt4_all.deb ...
+Unpacking firmware-brcm80211 (1:20240709-2~bpo12+1+rpt4) over (1:20240709-2~bpo12+1+rpt4) ...
+Preparing to unpack .../wireless-tools_30~pre9-14_arm64.deb ...
+Unpacking wireless-tools (30~pre9-14) over (30~pre9-14) ...
+Preparing to unpack .../wpasupplicant_2%3a2.10-12+deb12u3_arm64.deb ...
+Unpacking wpasupplicant (2:2.10-12+deb12u3) over (2:2.10-12+deb12u3) ...
+Setting up wireless-tools (30~pre9-14) ...
+Setting up wpasupplicant (2:2.10-12+deb12u3) ...
+Setting up firmware-brcm80211 (1:20240709-2~bpo12+1+rpt4) ...
+Processing triggers for dbus (1.14.10-1~deb12u1) ...
+root@DietPi:~# sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+root@DietPi:~# ls /run/wpa_supplicant/
+root@DietPi:~# sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+Successfully initialized wpa_supplicant
+nl80211: kernel reports: Registration to specific type not supported
+root@DietPi:~# ls /run/wpa_supplicant/
+p2p-dev-wlan0  wlan0
+root@DietPi:~# sudo wpa_cli -i wlan0 status
+bssid=96:f8:33:11:04:c2
+freq=2462
+ssid=harshal
+id=0
+mode=station
+pairwise_cipher=CCMP
+group_cipher=CCMP
+key_mgmt=WPA2-PSK
+wpa_state=COMPLETED
+ip_address=10.0.0.50
+p2p_device_address=de:a6:32:27:e1:90
+address=dc:a6:32:27:e1:90
+uuid=6a06fbc1-0219-54a3-8495-79c0dc7fc01b
+root@DietPi:~# ip a show wlan0
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether dc:a6:32:27:e1:90 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.0.50/24 brd 10.0.0.255 scope global wlan0
+       valid_lft forever preferred_lft forever
+    inet6 2409:40d4:118:e862:dea6:32ff:fe27:e190/64 scope global dynamic mngtmpaddr
+       valid_lft 7098sec preferred_lft 7098sec
+    inet6 fe80::dea6:32ff:fe27:e190/64 scope link
+       valid_lft forever preferred_lft forever
+root@DietPi:~# client_loop: send disconnect: Connection reset
+
+C:\Users\Dell>ssh root@10.0.0.50
+
+C:\Users\Dell>ssh root@10.0.0.50
+ssh: connect to host 10.0.0.50 port 22: Connection timed out
+
+C:\Users\Dell>ssh root@10.20.119.161
+ssh: connect to host 10.20.119.161 port 22: Connection refused
+
+C:\Users\Dell>ping 10.0.0.50
+
+Pinging 10.0.0.50 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.0.0.50:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\Users\Dell>ssh root@192.168.1.44
+root@192.168.1.44's password:
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+ ─────────────────────────────────────────────────────
+ DietPi v9.18.1 : Update available
+ ─────────────────────────────────────────────────────
+ - Device model : RPi 4 Model B (aarch64)
+ - CPU temp : 45 °C / 113 °F : Optimal temperature
+ - LAN IP : 192.168.1.44 (eth0)
+ - MOTD : Debian 13 Trixie has been released. Learn how to upgrade:
+          https://dietpi.com/blog/?p=4014
+ ─────────────────────────────────────────────────────
+
+ DietPi Team     : https://github.com/MichaIng/DietPi#the-dietpi-project-team
+ Patreon Legends : Chris Gelatt, ADSB.im
+ Website         : https://dietpi.com/ | https://x.com/DietPi_ | Bsky: @dietpi.com
+ Contribute      : https://dietpi.com/contribute.html
+ Web Hosting by  : https://login-online.com/
+
+ dietpi-update   : Run now to update DietPi from v9.18.1 to v9.19.2
+
+ dietpi-launcher : All the DietPi programs in one place
+ dietpi-config   : Feature rich configuration tool for your device
+ dietpi-software : Select optimised software for installation
+ htop            : Resource monitor
+ cpu             : Shows CPU information and stats
+
+root@DietPi:~# sudo systemctl status ssh
+× ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Thu 2025-11-20 16:38:33 UTC; 32min ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 506 (code=exited, status=255/EXCEPTION)
+        CPU: 84ms
+
+Nov 20 16:38:33 DietPi systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Nov 20 16:38:33 DietPi sshd[506]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
+Nov 20 16:38:33 DietPi sshd[506]: error: Bind to port 22 on :: failed: Address already in use.
+Nov 20 16:38:33 DietPi sshd[506]: fatal: Cannot bind any address.
+Nov 20 16:38:33 DietPi systemd[1]: ssh.service: Main process exited, code=exited, status=255/EXCEPTION
+Nov 20 16:38:33 DietPi systemd[1]: ssh.service: Failed with result 'exit-code'.
+Nov 20 16:38:33 DietPi systemd[1]: Failed to start ssh.service - OpenBSD Secure Shell server.
+root@DietPi:~# sudo ss -tlnp | grep ':22'
+LISTEN 0      1000         0.0.0.0:22        0.0.0.0:*    users:(("dropbear",pid=497,fd=3))
+LISTEN 0      1000            [::]:22           [::]:*    users:(("dropbear",pid=497,fd=4))
+root@DietPi:~# sudo systemctl stop dropbear
+root@DietPi:~# sudo systemctl disable dropbear
+Synchronizing state of dropbear.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install disable dropbear
+Removed "/etc/systemd/system/multi-user.target.wants/dropbear.service".
+root@DietPi:~# sudo apt remove dropbear
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  dropbear-bin libtomcrypt1 libtommath1
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  dropbear
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+After this operation, 76.8 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 22636 files and directories currently installed.)
+Removing dropbear (2022.83-1+deb12u3) ...
+root@DietPi:~# sudo ss -tlnp | grep :22
+root@DietPi:~# sudo systemctl start ssh
+root@DietPi:~# sudo systemctl enable ssh
+Synchronizing state of ssh.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable ssh
+root@DietPi:~# sudo systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; preset: enabled)
+     Active: active (running) since Thu 2025-11-20 17:14:59 UTC; 13s ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 3095 (sshd)
+      Tasks: 1 (limit: 4532)
+        CPU: 82ms
+     CGroup: /system.slice/ssh.service
+             └─3095 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+Nov 20 17:14:59 DietPi systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Nov 20 17:14:59 DietPi sshd[3095]: Server listening on 0.0.0.0 port 22.
+Nov 20 17:14:59 DietPi sshd[3095]: Server listening on :: port 22.
+Nov 20 17:14:59 DietPi systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+root@DietPi:~# sudo ss -tlnp | grep :22
+LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=3095,fd=3))
+LISTEN 0      128             [::]:22           [::]:*    users:(("sshd",pid=3095,fd=4))
+root@DietPi:~# client_loop: send disconnect: Connection reset
+
+C:\Users\Dell>ssh root@10.0.0.50
+
+C:\Users\Dell>ssh root@10.0.0.50
+ssh: connect to host 10.0.0.50 port 22: Connection timed out
+
+C:\Users\Dell>ssh root@10.0.0.50
+
+C:\Users\Dell>ssh root@192.168.1.44
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:IvGKlHP3FMdcUzbEmSGbqCOU5vUBsMqprRXbtf+jTt4.
+Please contact your system administrator.
+Add correct host key in C:\\Users\\Dell/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in C:\\Users\\Dell/.ssh/known_hosts:13
+Host key for 192.168.1.44 has changed and you have requested strict checking.
+Host key verification failed.

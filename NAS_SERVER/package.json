@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && node server.js",
     "dev": "set NODE_OPTIONS=--openssl-legacy-provider && nodemon server.js"
   },
   "keywords": [],
@@ -12,7 +13,9 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@marsaud/smb2": "^0.18.0",
+    "@google/generative-ai": "^0.24.1",
+    "@huggingface/inference": "^4.13.2",
+    "axios": "^1.13.2",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
@@ -21,7 +24,11 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.1",
     "multer": "^2.0.2",
-    "ssh2": "^1.17.0"
+    "openai": "^4.52.7",
+    "pdf-parse": "^2.4.5",
+    "socket.io": "^4.8.1",
+    "ssh2": "^1.17.0",
+    "systeminformation": "^5.22.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
