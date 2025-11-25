@@ -4,7 +4,7 @@ Made a fully fledged NAS Server using Raspberry Pi Model 4B, used samba and ntfs
 Currently using third party software for managing the storage from android.
 Also, trying to build a web application for managing the access, server connection, and storage management, basically a google drive(but mine)
 
-![sys-arch](https://github.com/user-attachments/assets/7757912d-3675-4247-825b-296586324483)
+![System Architecture](sys-arch.png)
 
 ## AI Chatbot Feature
 
