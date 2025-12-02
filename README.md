@@ -111,3 +111,5 @@ For detailed documentation on the full implementation, see [AI_CHATBOT.md](NAS_S
 
 For local AI model setup instructions, see [LOCAL_AI_SETUP.md](NAS_SERVER/LOCAL_AI_SETUP.md)
 For detailed documentation, see [AI_CHATBOT.md](NAS_SERVER/AI_CHATBOT.md)
+
+Contributor - [Kovid Joshi]([url](https://github.com/Vivasvan20))
